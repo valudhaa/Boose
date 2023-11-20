@@ -1,0 +1,227 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #292929;
+    line-height: 140%;
+    font-size: 16px;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 64px 120px;
+    background-image: url(./images/Headphones-image-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* #region menu */
+.menu {
+    position: fixed;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 500ms;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 64px 120px;
+    background-color: rgba(232, 239, 249, 1);
+}
+
+.menu:target {
+        transform: translateX(0%);
+}
+
+.Top__top {
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+/* #endregion */
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.nav__link {
+    color: #292929;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+        font-style: italic;
+        font-weight: 800;
+        text-align: left;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: -1.5px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+}
+
+main {
+    padding: 120px;
+    background-color: white;
+}
+
+.recommended__title {
+    margin-top: 0;
+    margin-bottom: 64px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+}
+
+.footer__class {
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+    height: 460px;
+    background-image: url(./images/Rectangle\ 27.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.recommended {
+    margin-bottom: 120px;
+}
+
+.recommended__title {
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -1.5px;
+}
+
+.recommended__products {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.product {
+    flex-basis: 324px;
+}
+
+.product__photo {
+    width: 100%;
+}
+
+.product__title {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 16%;
+    margin: 5%;
+}
+
+.roduct__category {
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.product__price {
+    margin: 0px;
+    font-weight: bold;
+}
+
+
+/* #region categories */
+.categories {
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.categories__title {
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -1.5px;
+}
+/* #endregion */
+/* #region category */
+.category {
+    margin-bottom: 64px;
+}
+
+.category_photos {
+    display: flex;
+    gap: 3%;
+    margin-bottom: 16px;
+}
+
+.category__title {
+    margin: 0;
+}
+
+.photo-wide {
+    width: 65%;
+}
+
+.photo-square {
+    width: 32%;
+}
+/* #endregion */
+
+.how-to-buy {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+}
+
+.how-to-buy__title {
+    flex-basis: 50%;
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: bold;
+    letter-spacing: -1.5px;
+}
+
+.how-to-buy__content {
+    flex-basis: 50%;
+}
+
+.how-to-buy__benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
